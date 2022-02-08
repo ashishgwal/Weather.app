@@ -6,7 +6,7 @@
 }  
 body{
     background:url(https://wallpapercave.com/wp/wp10602591.jpg);
-    background-position: center;
+    /* background-position: center; */
     background-repeat:no-repeat;
     background-size: cover;
     overflow:hidden;
@@ -68,6 +68,7 @@ body{
 .future-forecast{
     background: rgba(24,24,27,0.8);
     padding: 25px;
+    /* border:2px solid whitesmoke; */
     position:fixed;
     bottom:0;
     /* top:0; */
@@ -77,6 +78,7 @@ body{
     align-items: center;
     justify-content: center;
 }
+
 .future-forecast .today{
     display:flex;
     
@@ -85,6 +87,7 @@ body{
 
 }
 .future-forecast .today .day{
+
     padding: 5px 15px;
     background: #3c3c44;
     border-radius: 50px;
@@ -98,9 +101,11 @@ body{
     display: flex;
 }
 
+
 .weather-forecast .weather-forecast-item{
-    box-sizing: border-box;
-    box-shadow: 10px 20px 4px #ccc;
+    /* box-sizing: border-box;
+    /* */
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,9 +116,19 @@ body{
     border-radius: 10px;
     background: rgba(0,0,0,0.2)
     
+    
+}
+.weather-forcast-item{
+    border:2px solid whitesmoke;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 10px 2px 4px #ccc;
 }
 
 .weather-forecast .weather-forecast-item .day{
+    font-size: 26px;
     padding: 5px 15px;
     background: #3C3C44;
     border-radius: 50px;
@@ -174,7 +189,7 @@ body{
 
 }
 
-@media only screen and (max-width: 1400px){
+@media only screen and (max-width: 1000px){
     .future-forecast{
         justify-content: start;
         align-items: none;
